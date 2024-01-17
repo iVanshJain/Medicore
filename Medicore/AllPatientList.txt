@@ -1,0 +1,13 @@
+1 GuyHawkins 30 Male 31/01/2021 Powai Cough
+2 JaneCooper 60 Male 08/06/2021 Ahemdabad Fever
+3 RobertFox 71 Female 11/07/2021 Pune Cholera
+4 JulieRiley 35 Male 10/11/2021 Sonipat Dengue
+5 AlanFox 25 Male 08/11/2021 Sonipat Dengue
+6 AndreaBrewer 40 Male 11/11/2021 Sonipat Dengue
+7 TimothyMiler 36 Male 09/11/2021 Sonipat Dengue
+8 NickBarnett 55 Male 11/11/2021 Sonipat Dengue
+9 DanielleEllis 40 Male 09/11/2021 Sonipat Dengue
+10 VictoriaHawkins 28 Male 10/11/2021 Sonipat Dengue
+11 AndreaLych 56 Male 09/11/2021 Sonipat Dengue
+12 TimothyGrand 45 Male 09/11/2021 Sonipat Dengue
+13 LouisaDean 30 Male 10/11/2021 Sonipat Dengue

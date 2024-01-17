@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <title>Medicore</title>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="loginbox">
+            <h1 class="heading">Create account</h1>
+            <p>Already have an account? <a href="index.cgi?page=login">Sign in</a></p>
+            <form action="index.cgi" method="post">
+                <input type="text" name="first_name" id="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" id="last_name" placeholder="Last name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="password" name="pass" id="pass" placeholder="Password" required>
+                <input type="submit" value="Sign Up">
+                <div class="terms">
+                    <input type="checkbox" name="termsch" id="termsch" required>
+                    <h2>I have read and agree to the <span>Terms of Service</span></h2>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

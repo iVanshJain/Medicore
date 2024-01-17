@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Patient</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="hp1">
+                <img src="images/logo.png" alt="">
+                <h2>Medicore</h2>
+            </div>
+            <div class="menu">
+                <li><a href="index.cgi?page=home">Dashboard</a></li>
+                <li><a href="index.cgi?page=patient">Patients</a></li>
+                <li><a href="index.cgi?page=aboutus">About Us</a></li>
+            </div>
+            <div class="hprofile">
+                <h4>Alimurtuza</h4>
+                <div class="img"></div>
+            </div>
+        </header>
+        <section>
+            <div class="Patientdata" data-aos="fade-up-right" data-aos-duration="1000">
+                <p>Latest Patient Data</p>
+                <div id="tablePatientdata">
+
+                </div>
+            </div>
+            <div class="AllPatients" data-aos="fade-up-left" data-aos-duration="1000">
+                <p>Patients</p>
+                <hr>
+                <div id="tableAllPatientdata">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

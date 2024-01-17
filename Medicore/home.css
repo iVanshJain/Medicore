@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main{
+    height: 100vh;
+    background: #F2F8FF;
+}
+        /*Header Start*/
+header{
+    width: 100%;
+    height: 68px;
+    background: white;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(229, 229, 229, 0.2);
+}
+header .hp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .hp1 img{
+    width: 22px;
+    height: 22px;
+}
+header .hp1 h2{
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: 10px;
+}
+header .menu{
+    margin-right: auto;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+header .menu li{
+    list-style-type: none;
+    margin: 0 18px;
+    padding: 10px 20px;
+}
+header .menu li::after{
+    content: "";
+    display: block;
+    background: #fff;
+    height: 2px;
+    transform: scale(0);
+    transition: all 250ms ease-in-out;
+}
+header .menu li:hover::after{
+    background: #4facfe;
+    transform: scale(1);
+}
+header .menu li a{
+    text-decoration: none;
+    color: #34415E;
+    font-weight: 600;
+    font-size: 16px;
+}
+.hprofile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hprofile h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+.hprofile .img{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    cursor: pointer;
+}
+
+        /*Header Finish*/
+section{
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+        /*Left Section start*/
+.leftsec{
+    flex: 2;
+    height: 100%;
+} 
+.leftsec p{
+    color:#34415E;
+    font-weight: 700;
+    font-size: 22px;
+}
+.leftsec .basicdetails{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.basicdetails .detail{
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    margin-right: 40px;
+
+} 
+.basicdetails .detail .icon{
+    border-radius: 10px;
+}
+#icon1{
+    background: #FF2090;
+}
+#icon2{
+    background: #0481FC;
+}
+#icon3{
+    background: #17BDC0;
+}
+.detail .icon img{
+    width: 30px;
+    height: 30px;
+    margin: 10px 12px;
+}
+.detail .content{
+    margin-left: 20px;
+}
+.detail .content h1{
+    color:#9AA4B0;
+    font-size: 17px;
+    font-weight: 600;
+}
+.detail .content h4{
+    margin-top: 3px;
+    color:#34415E;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.subsection{
+    display: flex;
+    flex-direction: row;
+}
+
+.Patient-chart{
+    flex: 1;
+    width: max-content;
+    margin-top: 20px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+.Patient-chart p{
+    font-size: 20px;
+}
+.chart-container{
+    position: relative; 
+    height:40vh; 
+    width:40vw;
+    margin-top: 25px;
+}
+.reports{
+    flex: 1;
+    background: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.reportlist{
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.report{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px #ccc;
+    padding: 10px 10px; 
+    border-radius: 10px;
+    transition: all 500ms ease;  
+}
+.report:hover{
+    background: #35B6E8;
+}
+.report:hover .subreport h3,.report:hover .subreport h4{
+    color: white;
+}
+.subreport h3{
+    font-size: 15px;
+}
+.subreport h4{
+    margin-top: 15px;
+    font-size: 10px;
+    color: #808080;
+}
+.report img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.rightsec{
+    flex: 1;
+    height: 100%;
+}       
+
+/* Patient Css */
+.Patientdata{
+    width: 25%;
+    height: max-content;
+    border-radius: 15px;
+    padding: 15px 10px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.Patientdata p{
+    color:#34415E;
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: 15px;
+}
+
+.AllPatients{
+    flex: 1;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px 15px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.AllPatients:hover{
+    overflow: auto;
+}
+.AllPatients::-webkit-scrollbar-track
+{
+    margin: 10px 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.AllPatients::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #fff;
+}
+
+.AllPatients::-webkit-scrollbar-thumb
+{
+	border-radius: 15px;
+	background-color: #34415E;
+}
+
+.AllPatients p{
+    color:#34415E;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+hr{
+    margin: 10px 0px;
+    border-top: 2px solid #808080;
+}
+
+table{
+    margin-top: 10px;
+    width: 100%;
+}
+td{
+    padding: 5px 0px;  
+    font-size: 17px;
+    font-weight: 600;
+    color: #A3AEB7;
+    /* background: #F2F8FF;
+    border-radius: 5px;  */
+    text-align: center;
+}
+td h2{
+    font-weight: 700;
+    font-size:15px;
+    color:#34415E;
+}
+td h3{
+    font-weight: 700;
+    font-size:17px;
+    color:#34415E;
+    margin: 10px 0px;
+}
+
+/* About Us*/
+.mainprofile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+.profile{
+    width: 20%;
+    height: 50%;
+    background: white;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+#profile1,#profile3{
+    margin-bottom: 100px;
+}
+.profile .img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #DADDFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2000ms ease-in;
+}
+.profile:hover{
+    transform: translateY(-20px);
+}
+.profile .img  p{
+    color: #34415E;
+    font-weight: 800;
+    font-size: 18px;
+}
+.profile h2{
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.profile h3{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.profile h4{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
